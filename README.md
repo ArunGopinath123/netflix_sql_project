@@ -14,10 +14,12 @@ Explore and categorize content based on specific criteria and keywords.
 
 ## schema
 
-'''sql
+```sql
+Drop the table if it exists
 DROP TABLE IF EXISTS netflix;
-CREATE TABLE netflix
-(
+
+-- Create the netflix table
+CREATE TABLE netflix (
     show_id      VARCHAR(5),
     type         VARCHAR(10),
     title        VARCHAR(250),
@@ -31,4 +33,5 @@ CREATE TABLE netflix
     listed_in    VARCHAR(250),
     description  VARCHAR(550)
 );
-'''
+```
+
